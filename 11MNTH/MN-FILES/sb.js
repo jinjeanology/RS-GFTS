@@ -23,6 +23,7 @@ let myBtn = document.getElementById("btt");
 });
 
 function topFunction() {
+  setTimeout(function() {}, 50);
   // Scrolls smoothly to the top for all modern browsers
   window.scrollTo({
     top: 0,
@@ -33,7 +34,7 @@ function topFunction() {
 function sugBfunction() {
   const button = document.getElementById('sugB');
   const sound = document.getElementById('feedback');
-    // Wait 400ms before opening the new page
+    // Wait 50ms before opening the new page
     sound.play();
     setTimeout(function() {
       window.open('mailto:{irishiruuu@gmail.com}?subject=Soundboard Feedback&body=Hello! I would like to provide feedback for your project.');
@@ -44,7 +45,6 @@ function sugBfunction() {
     // const body = encodeURIComponent("This is a pre-filled email body.");
 
 }
-
 
 // Cute SFX
 

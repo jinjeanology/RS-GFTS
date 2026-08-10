@@ -9,12 +9,12 @@
 
     <header>
         <h1>Soundboard v1.0</h1>
-        <h4 align="center">An interactive soundboard... even the headers and buttons make sounds! <br><u>Click the buttons to play sounds!</u></h4>
+        <h4 align="center">An interactive soundboard... almost everything within this site makes a sound! <br>Click the buttons to play sounds.</h4>
         <h4 align="center">A website created by: Jeanology</h4>
         <h6 align="right" style="font-style: italic;">Note: This is still in testing. May or may not work.</h6>
     </header>
 
-    <button class="updlog" onclick="updlog()">Update Log</button>
+    <button class="updlog"; onclick="updlog(); new Audio('SFX/SB/slap.mp3').play()">Update Log</button>
 
     <!-- hidden text container -->
     <div id="hiddenLog" style="display: none; margin-top: 10px;">
@@ -23,9 +23,9 @@
 
     <script src="sb.js"></script>
     
-    <br><a href="#cute-sfx" class="CsfxButton">Cute SFX</a>
-    <span><a href="#funny-sfx" class="FsfxButton">Funny SFX</a></span>
-    <span><a href="#memes-sfx" class="MsfxButton">Memes SFX</a></span>
+    <br><a href="#cute-sfx" class="CsfxButton"; onclick="new Audio('SFX/SB/cartoonslip.mp3').play();">Cute SFX</a>
+    <span><a href="#funny-sfx" class="FsfxButton"; onclick="new Audio('SFX/SB/cartoonslip.mp3').play();">Funny SFX</a></span>
+    <span><a href="#memes-sfx" class="MsfxButton"; onclick="new Audio('SFX/SB/cartoonslip.mp3').play();">Memes SFX</a></span>
 
     <!-- Cute SFX Section -->
 
@@ -116,10 +116,10 @@
     </main>
     </header>
 
-    <button class="btt" id="btt" onclick="topFunction()">Back to Top</button>
+    <button class="btt" id="btt" onclick="new Audio('SFX/SB/slide.mp3').play(); topFunction();">Back to Top</button>
     
     <br><button class="sugB" onclick="sugBfunction()">Provide Feedback</button></br>
-    <audio 
+    <audio id="feedback" src="SFX/SB/ack.mp3" type="audio/mpeg"></audio>
 
 </body>
 </html>
