@@ -8,7 +8,7 @@ This is an archive of my gifts for my beloved one. This area will contain ALL of
 4. Extract it in your file directory.
 5. If there is a `README` file, follow the given instructions.
 
-### Plans to Considerate:
+## Plans to Considerate:
 - Interactive websites
 - TAU-related websites
 - Visual novels
