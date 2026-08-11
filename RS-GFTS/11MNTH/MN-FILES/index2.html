@@ -15,10 +15,17 @@
     </header>
 
     <button class="updlog"; onclick="updlog(); new Audio('SFX/SB/slap.mp3').play()">Update Log</button>
+    <span><button class="settings"; onclick="settings(); new Audio('SFX/SB/slap.mp3').play()">Settings</button></span>
 
     <!-- hidden text container -->
     <div id="hiddenLog" style="display: none; margin-top: 10px;">
-    <b>V1.0 - Initial release of the soundboard.</b> <br>Added Cute SFX, Funny SFX, and Memes SFX categories with various sound effects.
+        <b>V1.0 - Initial release of the soundboard.</b> <br>Added Cute SFX, Funny SFX, and Memes SFX categories with various sound effects.
+    </div>
+
+    <div id="hiddenSettings" style="display: none; margin: 0px;">
+        <br><button class="sugB" onclick="sugBfunction()">Provide Feedback</button>
+        <audio id="feedback" src="SFX/SB/ack.mp3" type="audio/mpeg"></audio>
+        <span><button class="rndC" onclick="rndCfunction(); new Audio('SFX/SB/ack.mp3').play()"><span>Color Generator</span></button></span>
     </div>
 
     <script src="sb.js"></script>
@@ -92,6 +99,9 @@
         <audio id="getOUT" src="SFX/FSFX/-getOUT.mp3" type="audio/mpeg"></audio>
         <button class="Fbutton" onclick="playgetOUT()">GET OUT!</button>
 
+        <audio id="Rscream" src="SFX/FSFX/-Rscream.mp3" type="audio/mpeg"></audio>
+        <button class="Fbutton" onclick="playRscream()"><i>*The Rake scream*</i></button>
+
         <script src="sb.js"></script>
     </main>
     </header>
@@ -110,16 +120,16 @@
         <audio id="allenkalbo" src="SFX/MSFX/-allenkalbo.mp3" type="audio/mpeg"></audio>
         <button class="Mbutton" onclick="playallenkalbo()">Allen Kalbo</button>
 
-        
-
         <script src="sb.js"></script>
     </main>
     </header>
 
     <button class="btt" id="btt" onclick="new Audio('SFX/SB/slide.mp3').play(); topFunction();">Back to Top</button>
-    
-    <br><button class="sugB" onclick="sugBfunction()">Provide Feedback</button></br>
-    <audio id="feedback" src="SFX/SB/ack.mp3" type="audio/mpeg"></audio>
+
+    <!-- 
+    <button id="VN" class="VN" onclick="rareChance();">???</button> 
+    <script src="sb.js"></script> 
+    -->
 
 </body>
 </html>
