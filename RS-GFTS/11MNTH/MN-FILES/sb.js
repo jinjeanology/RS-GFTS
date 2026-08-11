@@ -48,13 +48,21 @@ function topFunction() {
   });
 }
 
+function spotifyFunction() {
+  const button = document.getElementById('spotify')
+  const audio = document.getElementById('spotify')
+  audio.currentTime = 0;
+  audio.type = "audio/mpeg";
+  audio.play();  
+}
+
 function sugBfunction() {
   const button = document.getElementById('sugB');
   const sound = document.getElementById('feedback');
     // Wait 50ms before opening the new page
     sound.play();
     setTimeout(function() {
-      window.open('mailto:{irishiruuu@gmail.com}?subject=Soundboard Feedback&body=Hello! I would like to provide feedback for your project.');
+      window.open('mailto:{irishiruuu@gmail.com}?subject=Soundboard Feedback&body=Hello! I would like to provide feedback for your project.', '_blank');
     }, 50);
 
     // const email = "irishiruuu@gmail.com";
@@ -216,6 +224,20 @@ function playRscream() {
   audio.play();
 }
 
+function playgahdayum() {
+  const audio = document.getElementById("gahdayum");
+  audio.currentTime = 0;
+  audio.type = "audio/mpeg";
+  audio.play();
+}
+
+function playTscream() {
+  const audio = document.getElementById("Tscream");
+  audio.currentTime = 0;
+  audio.type = "audio/mpeg";
+  audio.play();
+}
+
 // Memes SFX
 
 function playangry() {
@@ -234,6 +256,97 @@ function playpinoyeminem() {
 
 function playallenkalbo() {
   const audio = document.getElementById("allenkalbo");
+  audio.currentTime = 0;
+  audio.type = "audio/mpeg";
+  audio.play();
+}
+
+function playbwthb() {
+  const audio = document.getElementById("bwthb");
+  audio.currentTime = 0;
+  audio.type = "audio/mpeg";
+  audio.play();
+}
+
+function playcooked() {
+  const audio = document.getElementById("cooked");
+  audio.currentTime = 0;
+  audio.type = "audio/mpeg";
+  audio.play();
+}
+
+function playdbgg() {
+  const audio = document.getElementById("dbgg");
+  audio.currentTime = 0;
+  audio.type = "audio/mpeg";
+  audio.play();
+}
+
+function playhltbo() {
+  const audio = document.getElementById("hltbo");
+  audio.currentTime = 0;
+  audio.type = "audio/mpeg";
+  audio.play();
+}
+
+function playijgsn() {
+  const audio = document.getElementById("ijgsn");
+  audio.currentTime = 0;
+  audio.type = "audio/mpeg";
+  audio.play();
+}
+
+function playlaugh() {
+  const audio = document.getElementById("laugh");
+  audio.currentTime = 0;
+  audio.type = "audio/mpeg";
+  audio.play();
+}
+
+function playmccave() {
+  const audio = document.getElementById("mccave");
+  audio.currentTime = 0;
+  audio.type = "audio/mpeg";
+  audio.play();
+}
+
+function playmsy() {
+  const audio = document.getElementById("msy");
+  audio.currentTime = 0;
+  audio.type = "audio/mpeg";
+  audio.play();
+}
+
+function playrgburp() {
+  const audio = document.getElementById("rgburp");
+  audio.currentTime = 0;
+  audio.type = "audio/mpeg";
+  audio.play();
+}
+
+function playttgbf() {
+  const audio = document.getElementById("ttgbf");
+  audio.currentTime = 0;
+  audio.type = "audio/mpeg";
+  audio.play();
+}
+
+function playviwty() {
+  const audio = document.getElementById("viwty");
+  audio.currentTime = 0;
+  audio.type = "audio/mpeg";
+  audio.play();
+}
+
+function playyams() {
+  const audio = document.getElementById("yams");
+  audio.currentTime = 0;
+  audio.type = "audio/mpeg";
+  audio.play();
+}
+
+function playwscream() {
+  const audio = document.getElementById("wscream");
   audio.currentTime = 0;
   audio.type = "audio/mpeg";
   audio.play();

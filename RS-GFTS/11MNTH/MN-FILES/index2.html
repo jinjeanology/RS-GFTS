@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Soundboard v1.0</title>
+    <title>Soundboard v1.1</title>
     <link rel="stylesheet" href="SB.css">
 </head>
 <body>
 
     <header>
-        <h1>Soundboard v1.0</h1>
+        <h1>Soundboard v1.1</h1>
         <h4 align="center">An interactive soundboard... almost everything within this site makes a sound! <br>Click the buttons to play sounds.</h4>
         <h4 align="center">A website created by: Jeanology</h4>
         <h6 align="right" style="font-style: italic;">Note: This is still in testing. May or may not work.</h6>
@@ -19,7 +19,8 @@
 
     <!-- hidden text container -->
     <div id="hiddenLog" style="display: none; margin-top: 10px;">
-        <b>V1.0 - Initial release of the soundboard.</b> <br>Added Cute SFX, Funny SFX, and Memes SFX categories with various sound effects.
+        <b>V1.1 - New sound effects.</b> <br>Added +2 new Funny SFX, and +13 new Memes SFX.</br>
+        <b>V1.0 - Initial release of the soundboard.</b> <br>Added Cute SFX, Funny SFX, and Memes SFX categories with various sound effects.</br>
     </div>
 
     <div id="hiddenSettings" style="display: none; margin: 0px;">
@@ -102,6 +103,12 @@
         <audio id="Rscream" src="SFX/FSFX/-Rscream.mp3" type="audio/mpeg"></audio>
         <button class="Fbutton" onclick="playRscream()"><i>*The Rake scream*</i></button>
 
+        <audio id="gahdayum" src="SFX/FSFX/-gahdayum.mp3" type="audio/mpeg"></audio>
+        <button class="Fbutton" onclick="playgahdayum()">GAH DAYHM</button>
+
+        <audio id="Tscream" src="SFX/FSFX/-tomscream.mp3" type="audio/mpeg"></audio>
+        <button class="Fbutton" onclick="playTscream()"><i>*Tom scream*</i></button>
+
         <script src="sb.js"></script>
     </main>
     </header>
@@ -119,6 +126,45 @@
 
         <audio id="allenkalbo" src="SFX/MSFX/-allenkalbo.mp3" type="audio/mpeg"></audio>
         <button class="Mbutton" onclick="playallenkalbo()">Allen Kalbo</button>
+
+        <audio id="bwthb" src="SFX/MSFX/-BWTHB.mp3" type="audio/mpeg"></audio>
+        <button class="Mbutton" onclick="playbwthb()">"Boi, what the hell boi."</button>
+
+        <audio id="cooked" src="SFX/MSFX/-cooked.mp3" type="audio/mpeg"></audio>
+        <button class="Mbutton" onclick="playcooked()">Cooked AF</button>
+
+        <audio id="dbgg" src="SFX/MSFX/-DBGG.mp3" type="audio/mpeg"></audio>
+        <button class="Mbutton" onclick="playdbgg()">Du Bist Gut Genug</button>
+
+        <audio id="hltbo" src="SFX/MSFX/-HLTBO.mp3" type="audio/mpeg"></audio>
+        <button class="Mbutton" onclick="playhltbo()">Homer Let the Barts Out</button>
+
+        <audio id="ijgsn" src="SFX/MSFX/-IJGSN.mp3" type="audio/mpeg"></audio>
+        <button class="Mbutton" onclick="playijgsn()">"I just get so nervy~"</button>
+
+        <audio id="laugh" src="SFX/MSFX/-laugh.mp3" type="audio/mpeg"></audio>
+        <button class="Mbutton" onclick="playlaugh()"><i>*laugh*</i></button>
+
+        <audio id="mccave" src="SFX/MSFX/-mccave.mp3" type="audio/mpeg"></audio>
+        <button class="Mbutton" onclick="playmccave()"><i>*cave noise*</i></button>
+
+        <audio id="msy" src="SFX/MSFX/-MSY.mp3" type="audio/mpeg"></audio>
+        <button class="Mbutton" onclick="playmsy()">"Man, shut your..."</button>
+
+        <audio id="rgburp" src="SFX/MSFX/-RGburp.mp3" type="audio/mpeg"></audio>
+        <button class="Mbutton" onclick="playrgburp()"><i>*BURRRP*</i></button>
+
+        <audio id="ttgbf" src="SFX/MSFX/-TTGBF.mp3" type="audio/mpeg"></audio>
+        <button class="Mbutton" onclick="playttgbf()">The ting goes <i>*bark*</i></button>
+
+        <audio id="viwty" src="SFX/MSFX/-vIWTY.mp3" type="audio/mpeg"></audio>
+        <button class="Mbutton" onclick="playviwty()">"I will to touch you."</button>
+
+        <audio id="yams" src="SFX/MSFX/-YAMS.mp3" type="audio/mpeg"></audio>
+        <button class="Mbutton" onclick="playyams()">"You are my sunshine..."</button>
+
+        <audio id="wscream" src="SFX/MSFX/-wscream.mp3" type="audio/mpeg"></audio>
+        <button class="Mbutton" onclick="playwscream()"><i>*Wilhelm scream*</i></button>
 
         <script src="sb.js"></script>
     </main>
