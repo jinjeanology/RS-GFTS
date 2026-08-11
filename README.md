@@ -1,6 +1,9 @@
 # RS-GFTS
 This is an archive of my gifts for my beloved one. This area will contain ALL of my files dedicating to him and him ONLY.
 
+## Navigation:
+- On the top area of your bar, you will see a branch named `main`. That indicates that this is the main branch. Click the branches to see all the available RS-GFTS.
+
 ## Installation Instructions:
 1. Select the file you want to download (can be `11MNTH`, `1ANNV`).
 2. To get the file, click the green button `Get Code`.
