@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Soundboard v1.1</title>
+    <link rel="stylesheet" href="SB.css">
+</head>
+<body>
+
+    <header>
+        <h1>Soundboard v1.1</h1>
+        <h4 align="center">An interactive soundboard... almost everything within this site makes a sound! <br>Click the buttons to play sounds.</h4>
+        <h4 align="center">A website created by: Jeanology</h4>
+        <h6 align="right" style="font-style: italic;">Note: This is still in testing. May or may not work.</h6>
+    </header>
+
+    <button class="updlog"; onclick="updlog(); new Audio('SFX/SB/slap.mp3').play()">Update Log</button>
+    <span><button class="settings"; onclick="settings(); new Audio('SFX/SB/slap.mp3').play()">Settings</button></span>
+
+    <!-- hidden text container -->
+    <div id="hiddenLog" style="display: none; margin-top: 10px;">
+        <b>V1.1 - New sound effects.</b> <br>Added +2 new Funny SFX, and +13 new Memes SFX.</br>
+        <b>V1.0 - Initial release of the soundboard.</b> <br>Added Cute SFX, Funny SFX, and Memes SFX categories with various sound effects.</br>
+    </div>
+
+    <div id="hiddenSettings" style="display: none; margin: 0px;">
+        <br><button class="sugB" onclick="sugBfunction()">Provide Feedback</button>
+        <audio id="feedback" src="SFX/SB/ack.mp3" type="audio/mpeg"></audio>
+        <span><button class="rndC" onclick="rndCfunction(); new Audio('SFX/SB/ack.mp3').play()"><span>Color Generator</span></button></span>
+    </div>
+
+    <script src="sb.js"></script>
+    
+    <br><a href="#cute-sfx" class="CsfxButton"; onclick="new Audio('SFX/SB/cartoonslip.mp3').play();">Cute SFX</a>
+    <span><a href="#funny-sfx" class="FsfxButton"; onclick="new Audio('SFX/SB/cartoonslip.mp3').play();">Funny SFX</a></span>
+    <span><a href="#memes-sfx" class="MsfxButton"; onclick="new Audio('SFX/SB/cartoonslip.mp3').play();">Memes SFX</a></span>
+
+    <!-- Cute SFX Section -->
+
+    <header class="CsfxH">
+        <h2 id="cute-sfx">Cute SFX &#127872;</h2>
+    <main>
+        <audio id="yippee" src="SFX/CSFX/-yippee.mp3" type="audio/mpeg"></audio>
+        <button class="Cbutton" onclick="playyippee()">YIPPEE</button>
+
+        <audio id="pikmin" src="SFX/CSFX/-pikmin.mp3" type="audio/mpeg"></audio>
+        <button class="Cbutton" onclick="playpikmin()">Pikmin</button>
+
+        <audio id="quack" src="SFX/CSFX/-quack.mp3" type="audio/mpeg"></audio>
+        <button class="Cbutton" onclick="playquack()"><i>*quack*</i></button>
+
+        <audio id="snore" src="SFX/CSFX/-snore.mp3" type="audio/mpeg"></audio>
+        <button class="Cbutton" onclick="playsnore()"><i>*snore*</i></button>
+
+        <audio id="evillaugh" src="SFX/CSFX/-evillaugh.mp3" type="audio/mpeg"></audio>
+        <button class="Cbutton" onclick="playevillaugh()"><i>*evil laugh*</i></button>
+
+        <audio id="dingle" src="SFX/CSFX/-dingle.mp3" type="audio/mpeg"></audio>
+        <button class="Cbutton" onclick="playdingle()">Dingle</button>
+
+        <audio id="numnumnum" src="SFX/CSFX/-numnumnum.mp3" type="audio/mpeg"></audio>
+        <button class="Cbutton" onclick="playnumnumnum()">Minecraft Num Num Num</button>
+
+        <audio id="bowomp" src="SFX/CSFX/-bowomp.mp3" type="audio/mpeg"></audio>
+        <button class="Cbutton" onclick="playbowomp()">Bo-Womp</button>
+
+        <audio id="Rnumnumnum" src="SFX/CSFX/-Rnumnumnum.mp3" type="audio/mpeg"></audio>
+        <button class="Cbutton" onclick="playRnumnumnum()">ROBLOX Num Num Num</button>
+
+        <script src="sb.js"></script>
+    </main>
+    </header>
+
+    <!-- Funny SFX Section -->
+
+    <header class="FsfxH">
+        <h2 id="funny-sfx">Funny SFX &#129315;</h2>
+    <main>
+        <audio id="indiansong" src="SFX/FSFX/-indiansong.mp3" type="audio/mpeg"></audio>
+        <button class="Fbutton" onclick="playindiansong()">Indian Song</button>
+
+        <audio id="scream" src="SFX/FSFX/-scream.mp3" type="audio/mpeg"></audio>
+        <button class="Fbutton" onclick="playscream()"><i>*scream*</i></button>
+
+        <audio id="suspense" src="SFX/FSFX/-suspense.mp3" type="audio/mpeg"></audio>
+        <button class="Fbutton" onclick="playsuspense()">Suspense</button>
+
+        <audio id="arayko" src="SFX/FSFX/-arayko.mp3" type="audio/mpeg"></audio>
+        <button class="Fbutton" onclick="playarayko()">"Aray ko!"</button>
+
+        <audio id="fart" src="SFX/FSFX/-fart.mp3" type="audio/mpeg"></audio>
+        <button class="Fbutton" onclick="playfart()">Fart</button>
+
+        <audio id="bhagt" src="SFX/FSFX/-BHAGT.mp3" type="audio/mpeg"></audio>
+        <button class="Fbutton" onclick="playbhagt()">"Bye, have a great time!"</button>
+
+        <audio id="faaah" src="SFX/FSFX/-FAAAH.mp3" type="audio/mpeg"></audio>
+        <button class="Fbutton" onclick="playfaaah()">FAAAH!</button>
+
+        <audio id="getOUT" src="SFX/FSFX/-getOUT.mp3" type="audio/mpeg"></audio>
+        <button class="Fbutton" onclick="playgetOUT()">GET OUT!</button>
+
+        <audio id="Rscream" src="SFX/FSFX/-Rscream.mp3" type="audio/mpeg"></audio>
+        <button class="Fbutton" onclick="playRscream()"><i>*The Rake scream*</i></button>
+
+        <audio id="gahdayum" src="SFX/FSFX/-gahdayum.mp3" type="audio/mpeg"></audio>
+        <button class="Fbutton" onclick="playgahdayum()">GAH DAYHM</button>
+
+        <audio id="Tscream" src="SFX/FSFX/-tomscream.mp3" type="audio/mpeg"></audio>
+        <button class="Fbutton" onclick="playTscream()"><i>*Tom scream*</i></button>
+
+        <script src="sb.js"></script>
+    </main>
+    </header>
+
+    <!-- Memes SFX Section -->
+
+    <header class="MsfxH">
+        <h2 id="memes-sfx">Memes SFX &#127758;</h2>
+    <main>
+        <audio id="angry" src="SFX/MSFX/-angry (roblox).mp3" type="audio/mpeg"></audio>
+        <button class="Mbutton" onclick="playangry()">Angry</button>
+
+        <audio id="pinoyeminem" src="SFX/MSFX/-pinoy eminem.mp3" type="audio/mpeg"></audio>
+        <button class="Mbutton" onclick="playpinoyeminem()">Pinoy Eminem <br>*LONG*</br></button>
+
+        <audio id="allenkalbo" src="SFX/MSFX/-allenkalbo.mp3" type="audio/mpeg"></audio>
+        <button class="Mbutton" onclick="playallenkalbo()">Allen Kalbo</button>
+
+        <audio id="bwthb" src="SFX/MSFX/-BWTHB.mp3" type="audio/mpeg"></audio>
+        <button class="Mbutton" onclick="playbwthb()">"Boi, what the hell boi."</button>
+
+        <audio id="cooked" src="SFX/MSFX/-cooked.mp3" type="audio/mpeg"></audio>
+        <button class="Mbutton" onclick="playcooked()">Cooked AF</button>
+
+        <audio id="dbgg" src="SFX/MSFX/-DBGG.mp3" type="audio/mpeg"></audio>
+        <button class="Mbutton" onclick="playdbgg()">Du Bist Gut Genug</button>
+
+        <audio id="hltbo" src="SFX/MSFX/-HLTBO.mp3" type="audio/mpeg"></audio>
+        <button class="Mbutton" onclick="playhltbo()">Homer Let the Barts Out</button>
+
+        <audio id="ijgsn" src="SFX/MSFX/-IJGSN.mp3" type="audio/mpeg"></audio>
+        <button class="Mbutton" onclick="playijgsn()">"I just get so nervy~"</button>
+
+        <audio id="laugh" src="SFX/MSFX/-laugh.mp3" type="audio/mpeg"></audio>
+        <button class="Mbutton" onclick="playlaugh()"><i>*laugh*</i></button>
+
+        <audio id="mccave" src="SFX/MSFX/-mccave.mp3" type="audio/mpeg"></audio>
+        <button class="Mbutton" onclick="playmccave()"><i>*cave noise*</i></button>
+
+        <audio id="msy" src="SFX/MSFX/-MSY.mp3" type="audio/mpeg"></audio>
+        <button class="Mbutton" onclick="playmsy()">"Man, shut your..."</button>
+
+        <audio id="rgburp" src="SFX/MSFX/-RGburp.mp3" type="audio/mpeg"></audio>
+        <button class="Mbutton" onclick="playrgburp()"><i>*BURRRP*</i></button>
+
+        <audio id="ttgbf" src="SFX/MSFX/-TTGBF.mp3" type="audio/mpeg"></audio>
+        <button class="Mbutton" onclick="playttgbf()">The ting goes <i>*bark*</i></button>
+
+        <audio id="viwty" src="SFX/MSFX/-vIWTY.mp3" type="audio/mpeg"></audio>
+        <button class="Mbutton" onclick="playviwty()">"I will to touch you."</button>
+
+        <audio id="yams" src="SFX/MSFX/-YAMS.mp3" type="audio/mpeg"></audio>
+        <button class="Mbutton" onclick="playyams()">"You are my sunshine..."</button>
+
+        <audio id="wscream" src="SFX/MSFX/-wscream.mp3" type="audio/mpeg"></audio>
+        <button class="Mbutton" onclick="playwscream()"><i>*Wilhelm scream*</i></button>
+
+        <script src="sb.js"></script>
+    </main>
+    </header>
+
+    <button class="btt" id="btt" onclick="new Audio('SFX/SB/slide.mp3').play(); topFunction();">Back to Top</button>
+
+    <!-- 
+    <button id="VN" class="VN" onclick="rareChance();">???</button> 
+    <script src="sb.js"></script> 
+    -->
+
+</body>
+</html>
